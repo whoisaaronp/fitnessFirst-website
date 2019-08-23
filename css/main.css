@@ -18,7 +18,7 @@ html, body {
 }
 
 h2 {
-    padding: 20% 0 0 0;
+    padding: 15% 0 0 0;
     margin: 0;
     text-align: center;
     font-size: 5vh;
@@ -114,6 +114,7 @@ section#five
     display:flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-evenly;
 }
 
 /* Media Queries 789, 1024, 1440 */
@@ -152,6 +153,12 @@ section#five
         display:flex;
         flex-direction: row;
         justify-content: space-evenly;
-        margin-top: 60px;
+        /* margin-top: 60px; */
+    }
+
+    /* give the three products space */
+    .productItems > div
+    {
+        margin-left: 4vw;
     }
   }
