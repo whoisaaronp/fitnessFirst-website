@@ -13,7 +13,10 @@
 /* Make the body 100% of the browser viewport height */
 html, body 
 {
-	font-family: 'Lexend Mega', sans-serif;
+    font-family: 'Syne Extra';
+    letter-spacing: 0.1rem;
+    font-weight: normal;
+    font-style: normal;
     height: 100%;
     margin: 0;
 }
@@ -29,11 +32,19 @@ h2
 
 p 
 {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Syne Regular';
     text-align: center;
     color: white;
-    font-weight: 300;
+    font-weight: inherit;
     letter-spacing: 0.1rem;
+    margin-bottom: 10px;
+}
+
+.mobile-text-width
+{
+    max-width:100%;
+    line-height: 10vw;
+
 }
 
 /* Make each section 100% of the browser viewport height */
@@ -43,11 +54,11 @@ section
     color:white;
     position: relative;
     text-align: center;
- 
 }
 
 /* Center the content of the sections */
-.inner {
+.inner 
+{
     max-width: 85%;
 	margin: 0 auto;
 
@@ -142,6 +153,25 @@ section#five
         padding-top: 230px;
     }
 
+    .splash
+    {
+        max-width: 28%;
+        margin: 0;
+    }
+
+    /* Splash styling for Desktop */
+    #heroTitle 
+    {
+        width: max-content;
+        text-align: left;
+    } 
+
+    .splash p
+    {
+        line-height: 3vw;
+        text-align: left;
+    }
+
     /* Desktop - side by side */
     .desktop-box
     {
@@ -157,12 +187,7 @@ section#five
         display:flex;
         flex-direction: row;
         justify-content: space-evenly;
-        /* margin-top: 60px; */
+        margin-top: 60px;
     }
 
-    /* give the three products space */
-    .productItems > div
-    {
-        margin-left: 4vw;
-    }
   }
