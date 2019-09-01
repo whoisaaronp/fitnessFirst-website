@@ -13,16 +13,17 @@
 /* Make the body 100% of the browser viewport height */
 html, body 
 {
-    font-family: 'Syne Extra';
+    font-family: Arial, Helvetica, sans-serif;
     letter-spacing: 0.1rem;
-    font-weight: normal;
-    font-style: normal;
     height: 100%;
     margin: 0;
 }
 
 h2 
 {
+    font-family: 'Syne Extra';
+    font-weight: normal;
+    font-style: normal;
     padding: 15% 0 0 0;
     margin: 0;
     text-align: center;
@@ -73,6 +74,7 @@ section#one
 /* Intro splash section */
 .heroCon
 {
+    display: -webkit-flex; /* Safari */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -83,8 +85,8 @@ section#one
 
 .mobile-box
 {
-    width: 250px;
-    height: 250px;
+    width: 225px;
+    height: 225px;
     padding: 20px;
     margin-top: 40px;
     background-color: greenyellow;
@@ -92,8 +94,8 @@ section#one
 
 .desktop-box
 {
-    width: 250px;
-    height: 250px;
+    width: 225px;
+    height: 225px;
     padding: 20px;
     background-color: greenyellow;
     margin-top: 40px;
@@ -121,24 +123,41 @@ section#five
 
 .productTwo
 {
+    display: -webkit-flex; /* Safari */
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
-.productItems
+
+.productThree
 {
-    display:flex;
+    display: -webkit-flex; /* Safari */
+    display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
 }
+
 
 /* Media Queries 789, 1024, 1440 */
 /* MEDIA QUERIES */
 /* When the width is between 600px and 900px OR above 1100px - change the appearance of <div> */
 @media screen and (min-width: 768px), (min-width: 1100px) {
-    
+     
+    h2
+    {
+        font-family: 'Syne Extra';
+        font-weight: normal;
+        font-style: normal;
+        padding: 15% 0 0 0;
+        margin: 0;
+        text-align: center;
+        font-size: 4vh;
+        margin-bottom: 20px;
+    }
+
     section#two
     {
+        display: -webkit-flex; /* Safari */
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
@@ -147,6 +166,7 @@ section#five
 
     .heroCon
     { 
+        display: -webkit-flex; /* Safari */
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
@@ -175,19 +195,39 @@ section#five
     /* Desktop - side by side */
     .desktop-box
     {
-        width: 250px;
-        height: 250px;
+        width: 27vh;
+        height: 27vh;
         padding: 20px;
         background-color: greenyellow;
     } 
 
-    /* display products side by side */
+    .productTwo
+    {
+        width: 100vw;
+        display: -webkit-flex; /* Safari */
+        display: flex;
+        flex-direction: column;
+        align-items: normal;
+    }
+
+    .productThree
+    {
+        width: 100vw;
+        display: -webkit-flex; /* Safari */
+        display: flex;
+        flex-direction: column;
+        align-items: normal;
+    }
+
+
+    /* display products side by  side */
     .productItems
     {
+        display: -webkit-flex; /* Safari */
         display:flex;
         flex-direction: row;
         justify-content: space-evenly;
-        margin-top: 60px;
+        margin-top: 10px;
     }
 
   }
