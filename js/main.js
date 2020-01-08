@@ -31,3 +31,8 @@ $("section").each(function() {
     .addTo(ctrl);
  
 });
+
+// add remove class function
+$(document).on('click', 'ul li', function(){
+    $(this).addClass('active').siblings().removeClass('active')
+});
